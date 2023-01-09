@@ -1,0 +1,776 @@
+html {
+	font-family: 'Limelight';
+
+	
+}
+
+
+p {
+	color: #454545;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 3px;
+	
+}
+
+header p {
+	color: #fff;
+	font-size: 2.5rem;
+	margin-top:2rem;
+}
+
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+
+header  h2 {
+	font-weight: 900;
+	padding: 0px;
+}
+
+header + h2 {
+	font-size: 55px;
+	font-weight: 900;
+	letter-spacing:-0.2rem;
+	
+}
+
+header > h3 {
+	font-size: 34px;
+	font-weight: 900;
+	letter-spacing: -0.2rem;
+	
+}
+
+
+div h2{
+	
+	border-radius: 30px;
+    width: 80%;
+    margin: 10px;
+    margin-left: 0;
+    margin-top: 2rem;
+    font-size: 24px;
+    letter-spacing: -.2rem;
+	
+			
+}
+
+header div h2{
+	font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+	margin-top: 3rem;
+}
+
+
+h2 + p {
+	width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 1rem;
+    background: #FF0;
+    color: #333;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-size: 16px;
+	
+}
+
+h2 ~ h5 {
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 0.5rem;
+	background-color:#034589 ;
+	border-radius: 20px 20px 0 0;
+	width: 30%;
+	line-height: 2rem;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	margin-top: -3rem;
+	
+	}
+
+
+header ~ p {
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+	font-size: 210px;
+	margin-top:16px;
+	
+
+}
+
+
+
+/*formulario*/
+
+form{
+    margin-top: 5rem;
+	width: 100%;
+}
+
+form div{
+    margin-bottom: 20px;
+    border-radius: 0px 1rem 1rem;
+    padding: 20px;
+    margin: 1rem 1rem 20px 1rem;
+    border-bottom: 10px solid rgba(105, 113, 154, 50%);
+    background-color: #fff;
+}
+
+
+[type="text"], [type="email"], textarea{
+    width: 100%;
+    display: block;
+    border: none;
+    background-color: #f1f2f6;
+    padding: .5rem;
+    
+}
+
+[type="submit"]{
+	width: 30%;
+    padding: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border-radius: 0px 20px 20px;
+    color: #fff;
+    background-color: #FD7889;
+    border: none;
+    cursor: pointer;
+    }
+
+
+.container-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+[type="radio"],[type="checkbox"]{
+    margin-left:1rem;
+}
+
+
+label{
+    display: block;
+    font-weight:900;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+
+    
+}
+
+
+
+
+
+
+/* Pseudo-classes */
+
+a {
+	text-decoration: none; /* o padrão é underline */
+	color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+}
+
+
+
+.bookmark-topo-1 a:hover {
+
+	color: #034589;
+	;
+
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: #009;
+	}
+
+article a:hover {
+	color: #0070C1;
+
+}
+
+header h2:hover {
+	color: #FF0;
+
+}
+
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: sans-serif;
+}
+
+
+nav{
+	height: 70vh;
+	width: 30%;
+}
+
+
+nav h3{
+	background-color: #FD7889;
+	padding: 5px;
+	border-radius: 30px;
+	width: 10%;
+	font-style: normal;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	font-size: 2.0rem;
+	font-weight: 900;
+}
+
+article{
+	float: left;
+	width: 70%;
+}
+
+article > h1{
+    width: 30%;
+    border-radius: 30px;
+	
+}
+
+summary ~ p{
+	color: #fff;
+	line-height: 11px;
+	margin-left: 30px;
+	list-style-type: circle;
+}
+
+
+
+h1{
+	font-size: 24px;
+	letter-spacing: -0.09rem;
+}
+
+h3{
+	line-height: -2px;
+}
+
+
+
+h1, h2, h3 {
+	font-weight: 90px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+p {
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+ul {
+	padding-left: 3rem;
+	margin-left: 2rem;	
+	list-style-type: none;
+	
+}
+
+li {
+	letter-spacing: 0.03rem;
+	font-family: sans-serif;
+	line-height: 2.2rem;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+
+article li{
+	
+	font-size: 30px;
+	float: right;
+	
+}
+
+
+.bookmark-topo{
+    width: 100%;
+    background-color: #FD7889;
+    display: block;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border-radius: 120px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+	
+}
+
+
+ 
+.bookmark-topo-1 {
+	width: 90%;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+	vertical-align: middle;
+	padding-top: -50%;
+    	
+}
+
+
+
+.totop a{
+    background-color: #FD7889;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 13px;
+    margin-left: auto;
+    margin-right: auto;	
+	color: #fff;
+}
+
+.conteudo-textables blockquote{
+	padding: 57px;
+    background-color: #f1f2f6;
+    margin-top: 4%;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    display: block;
+    
+}
+
+.conteudo-textables{
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    display: block;
+}
+
+
+.release-douglas td{
+	border: none;
+	color: #009;
+
+}
+
+
+h3 {
+	/* declaração resumida / completa */
+	font: italic bold 1.2rem/2 sans-serif;
+}
+
+
+/* 	Cores */
+
+
+
+section {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+
+
+header{
+	background: url(https://ebaconline.com.br/upload/cms/ipzeXACHdPJQmCqUhpH3W.svg) center top no-repeat;
+	background-position: 0% ;
+	background-size: 375px;
+	
+}
+
+
+
+
+
+
+header,
+footer {
+	background-color:#0070C1;
+	
+		
+}
+
+
+
+footer p {
+	color: rgb(255, 255, 255);
+    margin-top: -1vw;
+}
+
+footer{
+	width: 100%;
+}
+
+.navegacao {
+	background-color: #0070C1;
+	padding: 0.8rem;
+	width: 80%;
+	border-radius: 30px 30px 0 ;
+	padding-bottom: 3rem;
+	padding-top: 2rem;
+}
+
+.navegacao li{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	padding: .5rem;
+	color: #fff;
+	font-weight: 600;
+}
+
+.navegacao p{
+	padding: .6rem;
+	color: #fff;
+}
+
+
+.navegacao details{
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.navegacao summary ul{
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+
+.navegacao li a {
+	color:#fff;
+	font-size: 1.6rem;
+	padding: .5rem;
+	cursor: pointer;
+	
+}
+
+
+
+
+.release-douglas-infos{
+    margin-left: 3%;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+	
+}
+
+
+.release-douglas-infos h2{
+	margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    letter-spacing: -0.3rem;
+}
+
+
+.release-douglas-infos ul{
+	color: #fff;
+
+}
+
+.release-douglas-infos ul a{
+	color: #FD7889;
+	margin-bottom: 20px;
+	
+}
+
+.release-douglas img{
+	border-radius: 300px;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+
+
+.container-redes{
+	width: 100%;
+    background-color: #FD7889;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 120px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+}
+
+.redes{
+	width: 80%;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+	vertical-align: middle;
+    	
+
+}
+
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+#grafico-1 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #034589;
+	    	
+}
+
+/* Filtros */
+
+.filtro{
+	filter: grayscale(100%);
+	
+}
+
+.filtro:hover{
+	filter: grayscale(0%);
+}
+
+
+.coluna{
+	display: block;
+    width: 25%;
+    float: left;
+    background-color: aquamarine;
+    padding: 5px;
+    border: 1px solid #000;
+	text-align: center;
+}
+
+
+/*Layouts Responsivos*/
+
+/*Desktop*/
+
+@media (min-width: 1024px) {
+
+	body{
+		background-color: #0070C1;
+	}
+		
+	
+	.release-douglas-infos{
+		width: 80%;
+		text-align: center;
+		
+	}
+
+	header{
+		background: url(https://ebaconline.com.br/upload/cms/ipzeXACHdPJQmCqUhpH3W.svg) center top no-repeat;
+		background-position: -3rem 1rem;
+		background-size: 465px;
+		padding-left: 25%;
+		
+	
+	}
+
+	
+
+
+		
+
+}
+
+
+/*Tablet*/
+
+@media (max-width: 768px) {
+
+	body{
+		background-color: #0070C1;
+	}
+	
+	.release-douglas-infos{
+		margin-left: -5rem;
+		margin-right: auto;
+		width: 100%;
+		text-align: center;
+		
+	}
+
+	header{
+		background: url(https://ebaconline.com.br/upload/cms/ipzeXACHdPJQmCqUhpH3W.svg) center top no-repeat;
+		background-position: -9rem 2rem;
+		background-size: 427px;
+		padding-left: 19.7rem;
+		padding-right: 0px;
+		text-align: center;
+		font-size: 35px;
+		color: white;
+
+	}
+
+
+	h2 + p {
+		width: 38%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2rem;
+		background: #FF0;
+		color: #333;
+		line-height: 2rem;
+		padding: 24px;
+		border-radius: 30px;
+		font-weight: 700;
+		letter-spacing: 0.5rem;
+		text-transform: uppercase;
+		font-size: 16px;
+	}		
+
+	h2 + h5 {
+	font-weight: 100;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5rem;
+    background-color: #034589;
+    border-radius: 20px 20px 0 0;
+    width: 50%;
+    line-height: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    margin-top: -3rem;
+	}
+
+}
+
+
+
+/*Mobile*/
+
+@media (max-width: 425px) {
+
+	body{
+		background-color: #0070C1;
+		padding: 0px;
+			
+	}
+
+	header{
+		width: 100%;
+		padding: 28px;
+	}
+
+	nav, article{
+		width: 100%;
+		height: auto;
+		float: none;
+		
+	}
+
+	
+
+	.escolaEbac{
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	.release-douglas-infos{
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		text-align: center;
+		
+	}
+
+	.conteudo-textables{
+	    width: 80vw;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 6rem;
+		display: block;
+	}
+
+	h2 + p {  
+		width:100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1rem;
+		background: #FF0;
+		color: #333;
+		padding: 15px;
+		border-radius: 30px;
+		font-weight: 700;
+		letter-spacing: 0.5rem;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+	h2 ~ h5 {
+
+		font-weight: 100;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		letter-spacing: 0.5rem;
+		background-color: #034589;
+		border-radius: 20px 20px 0 0;
+		width: 20rem;
+		line-height: 2rem;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 20px;
+		margin-top: -3rem;
+	
+	
+	}
+
+	header div h2{
+		font-size: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 4rem;
+		margin-top: 13rem;
+	
+	}
+
+
+	header{
+		background: url(https://ebaconline.com.br/upload/cms/ipzeXACHdPJQmCqUhpH3W.svg) center top no-repeat;
+		background-position: -81px 25px;
+		background-size: 80%;
+	}
+	
+		
+
+}
